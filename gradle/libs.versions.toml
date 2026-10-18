@@ -1,0 +1,15 @@
+[versions]
+spigot-api = "1.21-R0.1-SNAPSHOT"
+gson = "2.14.0"
+junit = "6.1.3"
+shadow = "9.6.1"
+
+[libraries]
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+spigot-api = { module = "org.spigotmc:spigot-api", version.ref = "spigot-api" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+
+[plugins]
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }

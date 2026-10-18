@@ -1,0 +1,84 @@
+# BiblePlugin messages. Colour codes use &. Placeholders are {0}, {1}, ...
+prefix: "&8[&6&lBible&8] &r"
+
+error:
+  unknown: "&cUnknown command &e{0}&c. Try &e/bible help&c."
+  no-permission: "&cYou do not have permission to do that."
+  generic: "&c{0}"
+  internal: "&cSomething went wrong. Check the server console for details."
+  player-only: "This command can only be used by a player."
+  missing-argument: "A value is missing. Try &e/bible help&c."
+
+bible:
+  not-loaded: "The Bible &e{0}&7 is not loaded. Use &e/bible load {0}&7."
+  not-installed: "&e{0}&7 is not installed. Use &e/bible download {0}&7."
+  unknown: "&cNo edition called &e{0}&c. See &e/bible available&c."
+  no-language: "&cNo editions for the language &e{0}&c. See &e/bible available&c."
+
+downloaded:
+  none: "&7No Bibles are installed yet. Browse &e/bible available&7 and download one."
+
+download:
+  started: "&7Downloading &e{0}&7 — this can take a few seconds."
+  progress: "&8⬇ &7Downloading… &e{0}%"
+  done: "&a✔ &e{0}&a is ready with &f{1}&a verses. Read it with &e/bible read&a."
+  failed: "&cDownload failed: &f{0}"
+
+load:
+  started: "&7Loading &e{0}&7…"
+  done: "&a✔ &e{0}&a loaded &8(&f{1}&8 verses)&a."
+  failed: "&cCould not load: &f{0}"
+
+unload:
+  done: "&7Unloaded &e{0}&7. Its file is still on disk."
+
+delete:
+  done: "&7Deleted &e{0}&7 from disk."
+  failed: "&cCould not delete: &f{0}"
+
+default:
+  set: "&a✔ &e{0}&a is now the default Bible."
+
+import:
+  done: "&a✔ Imported &e{0}&a with &f{1}&a verses."
+  failed: "&cImport failed: &f{0}"
+
+reload:
+  done: "&a✔ Configuration and messages reloaded."
+
+library:
+  downloading: "&7Preparing &e{0}&7…"
+  failed: "&cCould not open that edition: &f{0}"
+
+chapters:
+  count: "&e{0}&7 has &f{1}&7 chapters."
+
+verses:
+  count: "&e{0} {1}&7 has &f{2}&7 verses."
+  need-chapter: "Give a chapter, for example &eJohn 3&7."
+
+occurrences:
+  count: "&7“&e{0}&7” appears &f{1}&7 times in &e{2}&7."
+
+find:
+  none: "&7No verse contains &e{0}&7."
+
+search:
+  error: "&cSearch failed: &f{0}"
+
+continue:
+  none: "&7You have not read anything yet. Try &e/bible read&7."
+
+bookmark:
+  added: "&a★ Bookmarked &e{0}&a. See &e/bible bookmark list&a."
+  removed: "&7Removed bookmark &e{0}&7."
+  none: "&7You have no bookmarks yet. Use the &6★&7 button in the reader."
+  usage: "Use &e/bible bookmark add|list|remove&7."
+
+loginverse:
+  on: "&a✔ A verse will greet you when you join."
+  off: "&7The join verse is off."
+  usage: "Use &e/bible loginverse on&7 or &e/bible loginverse off&7."
+
+prompt:
+  empty: "&cType something in the box first."

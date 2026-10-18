@@ -1,0 +1,1220 @@
+{
+  "generatedFrom": "https://api.getbible.net/v2/translations.json",
+  "generatedAt": "2026-10-18",
+  "entries": [
+    {
+      "id": "akjv",
+      "name": "American King James Version",
+      "languageCode": "en",
+      "language": "English",
+      "license": "Copyrighted; Free non-commercial distribution",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/akjv.json",
+      "readability": {
+        "readingEase": 78.7,
+        "gradeLevel": 6.8,
+        "difficulty": "MODERATE"
+      }
+    },
+    {
+      "id": "alb",
+      "name": "Albanian Bible",
+      "languageCode": "sq",
+      "language": "Albanian",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/alb.json",
+      "readability": null
+    },
+    {
+      "id": "aleppo",
+      "name": "Aleppo Codex",
+      "languageCode": "hbo",
+      "language": "Hebrew",
+      "license": "Public Domain",
+      "year": "2008",
+      "url": "https://api.getbible.net/v2/aleppo.json",
+      "readability": null
+    },
+    {
+      "id": "almeida",
+      "name": "Almeida Atualizada",
+      "languageCode": "pt",
+      "language": "Portuguese",
+      "license": "GPL",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/almeida.json",
+      "readability": null
+    },
+    {
+      "id": "aov",
+      "name": "Ou Vertaling",
+      "languageCode": "af",
+      "language": "Afrikaans",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2009",
+      "url": "https://api.getbible.net/v2/aov.json",
+      "readability": null
+    },
+    {
+      "id": "arabicsv",
+      "name": "Smith and Van Dyke",
+      "languageCode": "ar",
+      "language": "Arabic",
+      "license": "Copyrighted; Permission granted to distribute non-commercially in SWORD format",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/arabicsv.json",
+      "readability": null
+    },
+    {
+      "id": "asv",
+      "name": "American Standard Version",
+      "languageCode": "en",
+      "language": "English",
+      "license": "Public Domain",
+      "year": "2021",
+      "url": "https://api.getbible.net/v2/asv.json",
+      "readability": {
+        "readingEase": 76.3,
+        "gradeLevel": 6.8,
+        "difficulty": "MODERATE"
+      }
+    },
+    {
+      "id": "basicenglish",
+      "name": "Basic English Bible",
+      "languageCode": "en",
+      "language": "English",
+      "license": "Public Domain",
+      "year": "2008",
+      "url": "https://api.getbible.net/v2/basicenglish.json",
+      "readability": {
+        "readingEase": 82.5,
+        "gradeLevel": 6.5,
+        "difficulty": "EASY"
+      }
+    },
+    {
+      "id": "basque",
+      "name": "(Navarro Labourdin) NT",
+      "languageCode": "eu",
+      "language": "Basque",
+      "license": "Public Domain",
+      "year": "2008",
+      "url": "https://api.getbible.net/v2/basque.json",
+      "readability": null
+    },
+    {
+      "id": "bibelselskap",
+      "name": "Det Norsk Bibelselskap (1930)",
+      "languageCode": "nb",
+      "language": "Norwegian bokmal",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/bibelselskap.json",
+      "readability": null
+    },
+    {
+      "id": "bkr",
+      "name": "Czech BKR",
+      "languageCode": "cs",
+      "language": "Czech",
+      "license": "Public Domain",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/bkr.json",
+      "readability": null
+    },
+    {
+      "id": "breton",
+      "name": "Gospels",
+      "languageCode": "br",
+      "language": "Breton",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2012",
+      "url": "https://api.getbible.net/v2/breton.json",
+      "readability": null
+    },
+    {
+      "id": "burcbcm",
+      "name": "ဤဘာသာပြန်ကျမ်းကိုကက်သလစ်ဆရာတော်များရုံးချုပ်ရှိ  သမမ္မာ ကျမ်းစာတမန်တော်လုပ်ငန်းကော်မစ်ရှင်မှပံ့ပိုးပေးပါသည်။",
+      "languageCode": "my",
+      "language": "Myanmar Burmse",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/burcbcm.json",
+      "readability": null
+    },
+    {
+      "id": "calo",
+      "name": "El Evangelio segun S. Lucas, traducido al Romaní, ó dialecto de los Gitanos de España",
+      "languageCode": "rmq",
+      "language": "Calo",
+      "license": "Public Domain",
+      "year": "2010",
+      "url": "https://api.getbible.net/v2/calo.json",
+      "readability": null
+    },
+    {
+      "id": "canisius",
+      "name": "Petrus Canisius Translation",
+      "languageCode": "nl",
+      "language": "Dutch",
+      "license": "Public Domain",
+      "year": "2016",
+      "url": "https://api.getbible.net/v2/canisius.json",
+      "readability": null
+    },
+    {
+      "id": "cep",
+      "name": "Czech CEP",
+      "languageCode": "cs",
+      "language": "Czech",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2026",
+      "url": "https://api.getbible.net/v2/cep.json",
+      "readability": null
+    },
+    {
+      "id": "chamorro",
+      "name": "(Psalms Gospels Acts)",
+      "languageCode": "ch",
+      "language": "Chamorro",
+      "license": "Copyrighted; Freely distributable",
+      "year": "2013",
+      "url": "https://api.getbible.net/v2/chamorro.json",
+      "readability": null
+    },
+    {
+      "id": "che1860",
+      "name": "Cherokee New Testament (1860) with Sequoyah transliterated forms",
+      "languageCode": "chr",
+      "language": "Cherokee",
+      "license": "Public Domain",
+      "year": "2021",
+      "url": "https://api.getbible.net/v2/che1860.json",
+      "readability": null
+    },
+    {
+      "id": "chiunl",
+      "name": "聖經 (文理和合)",
+      "languageCode": "zh",
+      "language": "Chinese",
+      "license": "Public Domain",
+      "year": "2012",
+      "url": "https://api.getbible.net/v2/chiunl.json",
+      "readability": null
+    },
+    {
+      "id": "cns",
+      "name": "NCV Simplified",
+      "languageCode": "zh-Hans",
+      "language": "Chinese",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/cns.json",
+      "readability": null
+    },
+    {
+      "id": "cnt",
+      "name": "NCV Traditional",
+      "languageCode": "zh-Hant",
+      "language": "Chinese",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/cnt.json",
+      "readability": null
+    },
+    {
+      "id": "codex",
+      "name": "OT Westminster Leningrad Codex",
+      "languageCode": "hbo",
+      "language": "Hebrew",
+      "license": "Public Domain",
+      "year": "2022",
+      "url": "https://api.getbible.net/v2/codex.json",
+      "readability": null
+    },
+    {
+      "id": "coptic",
+      "name": "New Testament",
+      "languageCode": "cop",
+      "language": "Coptic",
+      "license": "Unknown",
+      "year": "2009",
+      "url": "https://api.getbible.net/v2/coptic.json",
+      "readability": null
+    },
+    {
+      "id": "cornilescu",
+      "name": "Cornilescu",
+      "languageCode": "ro",
+      "language": "Romanian",
+      "license": "Copyrighted. Distribution permitted to CrossWire Bible Society",
+      "year": "",
+      "url": "https://api.getbible.net/v2/cornilescu.json",
+      "readability": null
+    },
+    {
+      "id": "croatia",
+      "name": "Croatian",
+      "languageCode": "hr",
+      "language": "Croatian",
+      "license": "Public Domain",
+      "year": "2003",
+      "url": "https://api.getbible.net/v2/croatia.json",
+      "readability": null
+    },
+    {
+      "id": "csielizabeth",
+      "name": "1757 Church Slavonic Elizabeth Bible",
+      "languageCode": "cu",
+      "language": "Slavonic Elizabeth",
+      "license": "Public Domain",
+      "year": "2011",
+      "url": "https://api.getbible.net/v2/csielizabeth.json",
+      "readability": null
+    },
+    {
+      "id": "cus",
+      "name": "Union Simplified",
+      "languageCode": "zh-Hans",
+      "language": "Chinese",
+      "license": "Public Domain",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/cus.json",
+      "readability": null
+    },
+    {
+      "id": "cut",
+      "name": "Union Traditional",
+      "languageCode": "zh-Hant",
+      "language": "Chinese",
+      "license": "Public Domain",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/cut.json",
+      "readability": null
+    },
+    {
+      "id": "danish",
+      "name": "Danish",
+      "languageCode": "da",
+      "language": "Danish",
+      "license": "Public Domain",
+      "year": "2017",
+      "url": "https://api.getbible.net/v2/danish.json",
+      "readability": null
+    },
+    {
+      "id": "danish1819",
+      "name": "Danish New Testament from 1819 with original orthography",
+      "languageCode": "da",
+      "language": "Danish",
+      "license": "Public Domain",
+      "year": "2017",
+      "url": "https://api.getbible.net/v2/danish1819.json",
+      "readability": null
+    },
+    {
+      "id": "danish1871",
+      "name": "Danish OT1871 + NT1907 with original orthography",
+      "languageCode": "da",
+      "language": "Danish",
+      "license": "Public Domain",
+      "year": "2017",
+      "url": "https://api.getbible.net/v2/danish1871.json",
+      "readability": null
+    },
+    {
+      "id": "darby",
+      "name": "Darby",
+      "languageCode": "fr",
+      "language": "French",
+      "license": "Public Domain",
+      "year": "2026",
+      "url": "https://api.getbible.net/v2/darby.json",
+      "readability": null
+    },
+    {
+      "id": "dari",
+      "name": "Dari Translation",
+      "languageCode": "prs",
+      "language": "Dari",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2013",
+      "url": "https://api.getbible.net/v2/dari.json",
+      "readability": null
+    },
+    {
+      "id": "douayrheims",
+      "name": "Douay Rheims",
+      "languageCode": "en",
+      "language": "English",
+      "license": "Public Domain",
+      "year": "2009",
+      "url": "https://api.getbible.net/v2/douayrheims.json",
+      "readability": {
+        "readingEase": 75.0,
+        "gradeLevel": 8.0,
+        "difficulty": "ADVANCED"
+      }
+    },
+    {
+      "id": "easternarmenian",
+      "name": "Eastern (Genesis Exodus Gospels)",
+      "languageCode": "hy",
+      "language": "Armenian",
+      "license": "Public Domain",
+      "year": "2008",
+      "url": "https://api.getbible.net/v2/easternarmenian.json",
+      "readability": null
+    },
+    {
+      "id": "elberfelder",
+      "name": "Elberfelder (1871)",
+      "languageCode": "de",
+      "language": "German",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/elberfelder.json",
+      "readability": null
+    },
+    {
+      "id": "elberfelder1905",
+      "name": "Elberfelder (1905)",
+      "languageCode": "de",
+      "language": "German",
+      "license": "Public Domain",
+      "year": "2021",
+      "url": "https://api.getbible.net/v2/elberfelder1905.json",
+      "readability": null
+    },
+    {
+      "id": "esperanto",
+      "name": "Esperanto",
+      "languageCode": "eo",
+      "language": "Esperanto",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/esperanto.json",
+      "readability": null
+    },
+    {
+      "id": "estonian",
+      "name": "Estonian",
+      "languageCode": "et",
+      "language": "Estonian",
+      "license": "Unknown",
+      "year": "2008",
+      "url": "https://api.getbible.net/v2/estonian.json",
+      "readability": null
+    },
+    {
+      "id": "finnish1776",
+      "name": "Finnish Bible (1776)",
+      "languageCode": "fi",
+      "language": "Finnish",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/finnish1776.json",
+      "readability": null
+    },
+    {
+      "id": "gaelic",
+      "name": "Scots Gaelic (Gospel of Mark)",
+      "languageCode": "gd",
+      "language": "Scottish Gaelic",
+      "license": "Public Domain",
+      "year": "2009",
+      "url": "https://api.getbible.net/v2/gaelic.json",
+      "readability": null
+    },
+    {
+      "id": "giovanni",
+      "name": "Giovanni Diodati Bible (1649)",
+      "languageCode": "it",
+      "language": "Italian",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/giovanni.json",
+      "readability": null
+    },
+    {
+      "id": "gothic",
+      "name": "Gothic (Nehemiah NT Portions)",
+      "languageCode": "got",
+      "language": "Gothic",
+      "license": "Public Domain",
+      "year": "2013",
+      "url": "https://api.getbible.net/v2/gothic.json",
+      "readability": null
+    },
+    {
+      "id": "japbungo",
+      "name": "明治元訳「舊約聖書」(1953年版) 大正改訳「新約聖書",
+      "languageCode": "ja",
+      "language": "Japanese",
+      "license": "Public Domain",
+      "year": "2022",
+      "url": "https://api.getbible.net/v2/japbungo.json",
+      "readability": null
+    },
+    {
+      "id": "japdenmo",
+      "name": "Japanese Denmo 電網聖書",
+      "languageCode": "ja",
+      "language": "Japanese",
+      "license": "Public Domain",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/japdenmo.json",
+      "readability": null
+    },
+    {
+      "id": "japkougo",
+      "name": "Japanese Kougo-yaku 口語訳「聖書」(1954/1955年版)",
+      "languageCode": "ja",
+      "language": "Japanese",
+      "license": "Public Domain",
+      "year": "2008",
+      "url": "https://api.getbible.net/v2/japkougo.json",
+      "readability": null
+    },
+    {
+      "id": "japraguet",
+      "name": "Japanese Raguet-yaku ラゲ訳「我主イエズスキリストの新約聖書」(1910年版)",
+      "languageCode": "ja",
+      "language": "Japanese",
+      "license": "Public Domain",
+      "year": "2008",
+      "url": "https://api.getbible.net/v2/japraguet.json",
+      "readability": null
+    },
+    {
+      "id": "judson",
+      "name": "Judson (1835)",
+      "languageCode": "my",
+      "language": "Myanmar Burmse",
+      "license": "Public Domain",
+      "year": "2012",
+      "url": "https://api.getbible.net/v2/judson.json",
+      "readability": null
+    },
+    {
+      "id": "karoli",
+      "name": "Hungarian Karoli",
+      "languageCode": "hu",
+      "language": "Hungarian",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/karoli.json",
+      "readability": null
+    },
+    {
+      "id": "kjv",
+      "name": "King James Version",
+      "languageCode": "en",
+      "language": "English",
+      "license": "GPL",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/kjv.json",
+      "readability": {
+        "readingEase": 77.0,
+        "gradeLevel": 7.1,
+        "difficulty": "MODERATE"
+      }
+    },
+    {
+      "id": "kjva",
+      "name": "King James Version (1769) with Strongs Numbers and Morphology and CatchWords, including Apocrypha (without glosses)",
+      "languageCode": "en",
+      "language": "English",
+      "license": "GPL",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/kjva.json",
+      "readability": {
+        "readingEase": 76.2,
+        "gradeLevel": 7.3,
+        "difficulty": "MODERATE"
+      }
+    },
+    {
+      "id": "klv",
+      "name": "Klingon Language Version of the World English Bible",
+      "languageCode": "tlh",
+      "language": "tlh",
+      "license": "Public Domain",
+      "year": "2006",
+      "url": "https://api.getbible.net/v2/klv.json",
+      "readability": null
+    },
+    {
+      "id": "korean",
+      "name": "Korean",
+      "languageCode": "ko",
+      "language": "Korean",
+      "license": "Public Domain",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/korean.json",
+      "readability": null
+    },
+    {
+      "id": "koreankjv",
+      "name": "Hangul King James Version",
+      "languageCode": "ko",
+      "language": "Korean",
+      "license": "Copyrighted; Free non-commercial distribution",
+      "year": "2012",
+      "url": "https://api.getbible.net/v2/koreankjv.json",
+      "readability": null
+    },
+    {
+      "id": "latvian",
+      "name": "New Testament",
+      "languageCode": "lv",
+      "language": "Latvian",
+      "license": "Unknown",
+      "year": "2011",
+      "url": "https://api.getbible.net/v2/latvian.json",
+      "readability": null
+    },
+    {
+      "id": "lithuanian",
+      "name": "Lithuanian",
+      "languageCode": "lt",
+      "language": "Lithuanian",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2017",
+      "url": "https://api.getbible.net/v2/lithuanian.json",
+      "readability": null
+    },
+    {
+      "id": "livre",
+      "name": "Bíblia Livre",
+      "languageCode": "pt",
+      "language": "Portuguese",
+      "license": "Creative Commons Attribution 3.0 Brazil",
+      "year": "2017",
+      "url": "https://api.getbible.net/v2/livre.json",
+      "readability": null
+    },
+    {
+      "id": "livretr",
+      "name": "Bíblia Livre - Textus Receptus",
+      "languageCode": "pt",
+      "language": "Portuguese",
+      "license": "Creative Commons Attribution 3.0 Brazil",
+      "year": "2017",
+      "url": "https://api.getbible.net/v2/livretr.json",
+      "readability": null
+    },
+    {
+      "id": "ls1910",
+      "name": "Louis Segond (1910)",
+      "languageCode": "fr",
+      "language": "French",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2026",
+      "url": "https://api.getbible.net/v2/ls1910.json",
+      "readability": null
+    },
+    {
+      "id": "luther1545",
+      "name": "Luther (1545)",
+      "languageCode": "de",
+      "language": "German",
+      "license": "Public Domain",
+      "year": "2014",
+      "url": "https://api.getbible.net/v2/luther1545.json",
+      "readability": null
+    },
+    {
+      "id": "lxx",
+      "name": "OT LXX Accented",
+      "languageCode": "grc",
+      "language": "Greek",
+      "license": "Copyrighted; Free non-commercial distribution",
+      "year": "2025",
+      "url": "https://api.getbible.net/v2/lxx.json",
+      "readability": null
+    },
+    {
+      "id": "mal1910",
+      "name": "Sathyavedapusthakam (Malayalam Bible) published in 1910",
+      "languageCode": "mlf",
+      "language": "mlf",
+      "license": "Public Domain",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/mal1910.json",
+      "readability": null
+    },
+    {
+      "id": "manxgaelic",
+      "name": "Manx Gaelic (Esther Jonah 4 Gospels)",
+      "languageCode": "gv",
+      "language": "Manx Gaelic",
+      "license": "Public Domain",
+      "year": "2003",
+      "url": "https://api.getbible.net/v2/manxgaelic.json",
+      "readability": null
+    },
+    {
+      "id": "maori",
+      "name": "Maori",
+      "languageCode": "mi",
+      "language": "Maori",
+      "license": "Unknown",
+      "year": "2006",
+      "url": "https://api.getbible.net/v2/maori.json",
+      "readability": null
+    },
+    {
+      "id": "martin",
+      "name": "Martin (1744)",
+      "languageCode": "fr",
+      "language": "French",
+      "license": "Public Domain",
+      "year": "2008",
+      "url": "https://api.getbible.net/v2/martin.json",
+      "readability": null
+    },
+    {
+      "id": "mg1865",
+      "name": "Baiboly Malagasy (1865)",
+      "languageCode": "mg",
+      "language": "Malagasy",
+      "license": "Public Domain",
+      "year": "2021",
+      "url": "https://api.getbible.net/v2/mg1865.json",
+      "readability": null
+    },
+    {
+      "id": "moderngreek",
+      "name": "Greek Modern",
+      "languageCode": "el",
+      "language": "Greek Modern",
+      "license": "Public Domain",
+      "year": "2012",
+      "url": "https://api.getbible.net/v2/moderngreek.json",
+      "readability": null
+    },
+    {
+      "id": "modernhebrew",
+      "name": "Hebrew Modern",
+      "languageCode": "he",
+      "language": "Hebrew",
+      "license": "Unknown",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/modernhebrew.json",
+      "readability": null
+    },
+    {
+      "id": "monkjv",
+      "name": "Mongolian King James Version",
+      "languageCode": "mn",
+      "language": "Mongolian",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/monkjv.json",
+      "readability": null
+    },
+    {
+      "id": "ndebele",
+      "name": "Ndebele Bible",
+      "languageCode": "nd",
+      "language": "Ndebele",
+      "license": "GFDL",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/ndebele.json",
+      "readability": null
+    },
+    {
+      "id": "norsmb",
+      "name": "Studentmållagsbibelen frå 1921",
+      "languageCode": "nn",
+      "language": "Norwegian nynorsk",
+      "license": "Public Domain",
+      "year": "2012",
+      "url": "https://api.getbible.net/v2/norsmb.json",
+      "readability": null
+    },
+    {
+      "id": "peshitta",
+      "name": "Peshitta NT",
+      "languageCode": "syr",
+      "language": "Syriac",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/peshitta.json",
+      "readability": null
+    },
+    {
+      "id": "pohnold",
+      "name": "Old Public Domain Pohnpeian Bible",
+      "languageCode": "pon",
+      "language": "Pohnpeian",
+      "license": "Public Domain",
+      "year": "",
+      "url": "https://api.getbible.net/v2/pohnold.json",
+      "readability": null
+    },
+    {
+      "id": "pohnpeian",
+      "name": "Bible in Pohnpeian language",
+      "languageCode": "pon",
+      "language": "Pohnpeian",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2012",
+      "url": "https://api.getbible.net/v2/pohnpeian.json",
+      "readability": null
+    },
+    {
+      "id": "polgdanska",
+      "name": "Polish Biblia Gdanska (1881)",
+      "languageCode": "pl",
+      "language": "Polish",
+      "license": "Public Domain",
+      "year": "2007",
+      "url": "https://api.getbible.net/v2/polgdanska.json",
+      "readability": null
+    },
+    {
+      "id": "polugdanska",
+      "name": "Updated Gdańsk Bible",
+      "languageCode": "pl",
+      "language": "Polish",
+      "license": "Copyrighted; Free non-commercial distribution",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/polugdanska.json",
+      "readability": null
+    },
+    {
+      "id": "potawatomi",
+      "name": "Potawatomi (Matthew Acts) (Lykins 1844)",
+      "languageCode": "pot",
+      "language": "Potawatomi",
+      "license": "Public Domain",
+      "year": "2007",
+      "url": "https://api.getbible.net/v2/potawatomi.json",
+      "readability": null
+    },
+    {
+      "id": "pyharaamattu1933",
+      "name": "Pyha Raamattu (1933 1938)",
+      "languageCode": "fi",
+      "language": "Finnish",
+      "license": "Public Domain",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/pyharaamattu1933.json",
+      "readability": null
+    },
+    {
+      "id": "pyharaamattu1992",
+      "name": "Pyha Raamattu (1992)",
+      "languageCode": "fi",
+      "language": "Finnish",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/pyharaamattu1992.json",
+      "readability": null
+    },
+    {
+      "id": "riveduta",
+      "name": "Riveduta Bible (1927)",
+      "languageCode": "it",
+      "language": "Italian",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/riveduta.json",
+      "readability": null
+    },
+    {
+      "id": "rv1858",
+      "name": "Reina Valera NT (1858)",
+      "languageCode": "es",
+      "language": "Spanish",
+      "license": "Public Domain",
+      "year": "2021",
+      "url": "https://api.getbible.net/v2/rv1858.json",
+      "readability": null
+    },
+    {
+      "id": "sahidic",
+      "name": "Sahidic NT",
+      "languageCode": "cop",
+      "language": "Coptic",
+      "license": "Public Domain",
+      "year": "2009",
+      "url": "https://api.getbible.net/v2/sahidic.json",
+      "readability": null
+    },
+    {
+      "id": "schlachter",
+      "name": "Schlachter (1951)",
+      "languageCode": "de",
+      "language": "German",
+      "license": "Copyrighted; Free non-commercial distribution",
+      "year": "2024",
+      "url": "https://api.getbible.net/v2/schlachter.json",
+      "readability": null
+    },
+    {
+      "id": "shona",
+      "name": "Shona Bible",
+      "languageCode": "sn",
+      "language": "Shona",
+      "license": "GFDL",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/shona.json",
+      "readability": null
+    },
+    {
+      "id": "srkdekavski",
+      "name": "Serbian Bible Daničić-Karadžić Ekavski",
+      "languageCode": "sr",
+      "language": "Serbian",
+      "license": "Public Domain",
+      "year": "2017",
+      "url": "https://api.getbible.net/v2/srkdekavski.json",
+      "readability": null
+    },
+    {
+      "id": "srkdijekav",
+      "name": "Serbian Bible Daničić-Karadžić Ijekavski",
+      "languageCode": "sr",
+      "language": "Serbian",
+      "license": "Public Domain",
+      "year": "2017",
+      "url": "https://api.getbible.net/v2/srkdijekav.json",
+      "readability": null
+    },
+    {
+      "id": "sse",
+      "name": "Sagradas Escrituras (1569)",
+      "languageCode": "es",
+      "language": "Spanish",
+      "license": "Public Domain",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/sse.json",
+      "readability": null
+    },
+    {
+      "id": "statenvertaling",
+      "name": "Dutch Staten Vertaling",
+      "languageCode": "nl",
+      "language": "Dutch",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/statenvertaling.json",
+      "readability": null
+    },
+    {
+      "id": "statenvertalinga",
+      "name": "De ganse Heilige Schrift bevattende al de kanonieke boeken van het Oude en Nieuwe Testament, met de apocriefe (deuterocanonieke) boeken",
+      "languageCode": "nl",
+      "language": "Dutch",
+      "license": "Public Domain",
+      "year": "2021",
+      "url": "https://api.getbible.net/v2/statenvertalinga.json",
+      "readability": null
+    },
+    {
+      "id": "swahili",
+      "name": "Swahili",
+      "languageCode": "sw",
+      "language": "Swahili",
+      "license": "Public Domain",
+      "year": "2006",
+      "url": "https://api.getbible.net/v2/swahili.json",
+      "readability": null
+    },
+    {
+      "id": "swedish",
+      "name": "Swedish (1917)",
+      "languageCode": "sv",
+      "language": "Swedish",
+      "license": "Public Domain",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/swedish.json",
+      "readability": null
+    },
+    {
+      "id": "swekarlxii",
+      "name": "Svenska Karl XII:s Bibel (1703)",
+      "languageCode": "sv",
+      "language": "Swedish",
+      "license": "Public Domain",
+      "year": "2009",
+      "url": "https://api.getbible.net/v2/swekarlxii.json",
+      "readability": null
+    },
+    {
+      "id": "swekarlxii1873",
+      "name": "Svenska Karl XII:s Bibel (1873)",
+      "languageCode": "sv",
+      "language": "Swedish",
+      "license": "Public Domain",
+      "year": "2010",
+      "url": "https://api.getbible.net/v2/swekarlxii1873.json",
+      "readability": null
+    },
+    {
+      "id": "synodal",
+      "name": "Synodal Translation (1876)",
+      "languageCode": "ru",
+      "language": "Russian",
+      "license": "Public Domain",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/synodal.json",
+      "readability": null
+    },
+    {
+      "id": "tagalog",
+      "name": "Ang Dating Biblia (1905)",
+      "languageCode": "tl",
+      "language": "Tagalog",
+      "license": "Public Domain",
+      "year": "2008",
+      "url": "https://api.getbible.net/v2/tagalog.json",
+      "readability": null
+    },
+    {
+      "id": "tausug",
+      "name": "Tausug Kitab Injil",
+      "languageCode": "tsg",
+      "language": "Tausug",
+      "license": "Creative Commons: by-nd 3.0",
+      "year": "2017",
+      "url": "https://api.getbible.net/v2/tausug.json",
+      "readability": null
+    },
+    {
+      "id": "textusreceptus",
+      "name": "NT Textus Receptus (1550 1894) Parsed",
+      "languageCode": "grc",
+      "language": "Greek",
+      "license": "Creative Commons: BY-NC-SA 4.0",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/textusreceptus.json",
+      "readability": null
+    },
+    {
+      "id": "thai",
+      "name": "Thai from kjv",
+      "languageCode": "th",
+      "language": "Thai",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2025",
+      "url": "https://api.getbible.net/v2/thai.json",
+      "readability": null
+    },
+    {
+      "id": "tischendorf",
+      "name": "NT Tischendorf 8th Ed",
+      "languageCode": "grc",
+      "language": "Greek",
+      "license": "Public Domain",
+      "year": "2009",
+      "url": "https://api.getbible.net/v2/tischendorf.json",
+      "readability": null
+    },
+    {
+      "id": "tpikjpb",
+      "name": "King Jems Pisin Baibel",
+      "languageCode": "tpi",
+      "language": "tpi",
+      "license": "Creative Commons: BY-NC-ND 4.0",
+      "year": "2022",
+      "url": "https://api.getbible.net/v2/tpikjpb.json",
+      "readability": null
+    },
+    {
+      "id": "turhadi",
+      "name": "Turkish Easy-to-Read Translation (HADI)",
+      "languageCode": "tr",
+      "language": "Turkish",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/turhadi.json",
+      "readability": null
+    },
+    {
+      "id": "turkish",
+      "name": "Turkish",
+      "languageCode": "tr",
+      "language": "Turkish",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2019",
+      "url": "https://api.getbible.net/v2/turkish.json",
+      "readability": null
+    },
+    {
+      "id": "tyndale",
+      "name": "William Tyndale Bible (1525/1530)",
+      "languageCode": "en",
+      "language": "English",
+      "license": "Public Domain",
+      "year": "2025",
+      "url": "https://api.getbible.net/v2/tyndale.json",
+      "readability": {
+        "readingEase": 79.5,
+        "gradeLevel": 6.7,
+        "difficulty": "MODERATE"
+      }
+    },
+    {
+      "id": "ukranian",
+      "name": "NT (P Kulish 1871)",
+      "languageCode": "uk",
+      "language": "Ukrainian",
+      "license": "Public Domain",
+      "year": "2010",
+      "url": "https://api.getbible.net/v2/ukranian.json",
+      "readability": null
+    },
+    {
+      "id": "ukrogienko",
+      "name": "Українська Біблія. Переклад Івана Огієнка.",
+      "languageCode": "uk",
+      "language": "Ukrainian",
+      "license": "Public Domain",
+      "year": "2023",
+      "url": "https://api.getbible.net/v2/ukrogienko.json",
+      "readability": null
+    },
+    {
+      "id": "uma",
+      "name": "Uma NT",
+      "languageCode": "ppk",
+      "language": "Uma",
+      "license": "Copyrighted; Free non-commercial distribution",
+      "year": "2006",
+      "url": "https://api.getbible.net/v2/uma.json",
+      "readability": null
+    },
+    {
+      "id": "valera",
+      "name": "Reina Valera (1909)",
+      "languageCode": "es",
+      "language": "Spanish",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2012",
+      "url": "https://api.getbible.net/v2/valera.json",
+      "readability": null
+    },
+    {
+      "id": "vietnamese",
+      "name": "Vietnamese (1934)",
+      "languageCode": "vi",
+      "language": "Vietnamese",
+      "license": "Public Domain",
+      "year": "2013",
+      "url": "https://api.getbible.net/v2/vietnamese.json",
+      "readability": null
+    },
+    {
+      "id": "vulgate",
+      "name": "Vulgata Clementina",
+      "languageCode": "la",
+      "language": "Latin",
+      "license": "Public Domain",
+      "year": "2017",
+      "url": "https://api.getbible.net/v2/vulgate.json",
+      "readability": null
+    },
+    {
+      "id": "wb",
+      "name": "Webster's Bible",
+      "languageCode": "en",
+      "language": "English",
+      "license": "Public Domain",
+      "year": "2003",
+      "url": "https://api.getbible.net/v2/wb.json",
+      "readability": {
+        "readingEase": 77.8,
+        "gradeLevel": 6.8,
+        "difficulty": "MODERATE"
+      }
+    },
+    {
+      "id": "web",
+      "name": "World English Bible",
+      "languageCode": "en",
+      "language": "English",
+      "license": "Public Domain",
+      "year": "2012",
+      "url": "https://api.getbible.net/v2/web.json",
+      "readability": {
+        "readingEase": 78.3,
+        "gradeLevel": 6.4,
+        "difficulty": "EASY"
+      }
+    },
+    {
+      "id": "westcotthort",
+      "name": "NT Westcott Hort UBS4 variants Parsed",
+      "languageCode": "grc",
+      "language": "Greek",
+      "license": "Creative Commons: BY-NC-SA 4.0",
+      "year": "2014",
+      "url": "https://api.getbible.net/v2/westcotthort.json",
+      "readability": null
+    },
+    {
+      "id": "westernarmenian",
+      "name": "Western NT",
+      "languageCode": "hy",
+      "language": "Armenian",
+      "license": "Public Domain",
+      "year": "2008",
+      "url": "https://api.getbible.net/v2/westernarmenian.json",
+      "readability": null
+    },
+    {
+      "id": "weymouth",
+      "name": "Weymouth NT",
+      "languageCode": "en",
+      "language": "English",
+      "license": "Public Domain",
+      "year": "2006",
+      "url": "https://api.getbible.net/v2/weymouth.json",
+      "readability": {
+        "readingEase": 73.0,
+        "gradeLevel": 7.7,
+        "difficulty": "ADVANCED"
+      }
+    },
+    {
+      "id": "wycliffe",
+      "name": "John Wycliffe Bible (c.1395)",
+      "languageCode": "enm",
+      "language": "English",
+      "license": "Creative Commons: BY-SA 4.0",
+      "year": "2020",
+      "url": "https://api.getbible.net/v2/wycliffe.json",
+      "readability": null
+    },
+    {
+      "id": "ylt",
+      "name": "Young's Literal Translation",
+      "languageCode": "en",
+      "language": "English",
+      "license": "Public Domain",
+      "year": "2006",
+      "url": "https://api.getbible.net/v2/ylt.json",
+      "readability": {
+        "readingEase": 71.7,
+        "gradeLevel": 8.6,
+        "difficulty": "SCHOLARLY"
+      }
+    },
+    {
+      "id": "zhuromsky",
+      "name": "Victor Zhuromsky NT",
+      "languageCode": "ru",
+      "language": "Russian",
+      "license": "Copyrighted; Permission to distribute granted to CrossWire",
+      "year": "2003",
+      "url": "https://api.getbible.net/v2/zhuromsky.json",
+      "readability": null
+    }
+  ]
+}

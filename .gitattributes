@@ -1,0 +1,5 @@
+# Normalise line endings so the repository is identical on Windows and Linux.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.jar binary
+*.zip binary

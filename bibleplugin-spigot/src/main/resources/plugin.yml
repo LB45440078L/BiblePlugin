@@ -1,0 +1,34 @@
+name: BiblePlugin
+version: '${version}'
+main: org.bibleplugin.spigot.BiblePlugin
+api-version: '${apiVersion}'
+description: Read, search and explore the Bible in-game, with menus, sounds and temporary books. Works on 1.21 through 26.x.
+
+commands:
+  bible:
+    description: Read, search and explore the Bible.
+    usage: /bible help
+    aliases: [bib, scripture]
+    permission: bible.use
+
+permissions:
+  bible.use:
+    description: Read verses, browse, search and use bookmarks.
+    default: true
+  bible.book:
+    description: Receive temporary written books with scripture.
+    default: true
+  bible.download:
+    description: Download Bible editions from the catalogue.
+    default: op
+  bible.admin:
+    description: Load, unload, delete, import and reload Bibles.
+    default: op
+  bible.*:
+    description: Every BiblePlugin permission.
+    default: op
+    children:
+      bible.use: true
+      bible.book: true
+      bible.download: true
+      bible.admin: true

@@ -1,0 +1,43 @@
+# BiblePlugin configuration
+# Changes take effect after /bible reload (or a restart for bibles.keep-loaded).
+
+bibles:
+  # The edition used when a command does not name one. It must be loaded.
+  default: kjv
+  # Editions loaded at startup. Any that are not installed yet are downloaded.
+  keep-loaded:
+    - kjv
+  download:
+    # Seconds to wait for the server before giving up on one attempt.
+    timeout-seconds: 30
+    # How many times to retry a failed download (1-10).
+    attempts: 3
+
+search:
+  # Hits shown per page in the results menu.
+  results-per-page: 8
+  # The most verses a single search will collect.
+  max-results: 200
+
+reader:
+  # How players type into prompts:
+  #   ANVIL - a rename box in an anvil (works everywhere, recommended)
+  #   SIGN  - a sign editor; briefly places a real sign above the player
+  input: ANVIL
+
+temporary-book:
+  # Minutes before a temporary book is removed from the inventory.
+  lifetime-minutes: 20
+  # Characters per written-book page (40-512). Vanilla pages hold about 256.
+  chars-per-page: 240
+  # Pages per book (1-100). Longer passages are cut off with a notice.
+  max-pages: 100
+  author: BiblePlugin
+
+sounds:
+  enabled: true
+  # 0.0 to 1.0
+  volume: 0.7
+
+# Show a random verse when a player joins (players can switch it off with /bible loginverse off).
+login-verse: true
