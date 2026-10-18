@@ -21,9 +21,10 @@ search:
 
 reader:
   # How players type into prompts:
-  #   ANVIL - a rename box in an anvil (works everywhere, recommended)
-  #   SIGN  - a sign editor; briefly places a real sign above the player
-  input: ANVIL
+  #   SIGN  - a sign editor; briefly places a real sign above the player (recommended)
+  #   ANVIL - a rename box in an anvil. Bukkit cannot reliably read it on every version;
+  #           if it returns nothing, players are asked to type in chat instead.
+  input: SIGN
 
 temporary-book:
   # Minutes before a temporary book is removed from the inventory.

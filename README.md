@@ -36,7 +36,7 @@ The Bible name is optional wherever a default is set, so `/bible verse John 3:16
 | `/bible random [bible]` / `daily [bible]` | A random verse, or the verse of the day (the same for everyone). |
 | `/bible occurrences [bible] <word> [in <reference>]` | Count how often a word appears, optionally in one book or chapter. |
 | `/bible find [bible] <phrase> [in <reference>]` | List verses containing a phrase. |
-| `/bible search [bible]` | Type a search in an anvil (or sign) and browse results in a menu. |
+| `/bible search [bible]` | Type a search on a sign (or in chat) and browse results in a menu. |
 | `/bible bookmark add [bible] <reference>` / `list` / `remove <n>` | Save and manage bookmarks. |
 | `/bible loginverse on\|off` | Turn the verse shown when you join on or off. |
 | `/bible gui` | Open the Bible library. |
@@ -51,7 +51,7 @@ candidates. Note that the old `Exodus:6:15:4` (four-part) form is no longer acce
 In `/bible read` (or the library), the bottom row has:
 
 - **Previous / next page** and **previous / next chapter** arrows.
-- **Search** (anvil or sign prompt, then a results menu).
+- **Search** (sign prompt, then a results menu).
 - **Books** to jump to another book, and **Back** when you came from another menu.
 - **★ Bookmark** saves the chapter. **Temporary book** gives you the chapter as a book.
 - Left-click a verse to share it in chat. Right-click to bookmark it.
@@ -71,7 +71,7 @@ The old `bible.commands` node is gone; grant `bible.use` instead.
 ## Configuration
 
 `config.yml` (commented in the file) controls the default edition, the editions loaded on startup,
-download timeouts, search limits, the prompt input (`ANVIL` or `SIGN`), temporary book lifetime and
+download timeouts, search limits, the prompt input (`SIGN` by default, or `ANVIL`), temporary book lifetime and
 page size, sounds, and the join verse. `messages.yml` holds every message, with `&` colour codes and
 `{0}`-style placeholders.
 
@@ -267,10 +267,15 @@ the pure helpers the GUI and chat use.
 ## Known limitations
 
 - The plugin was built and unit-tested here, but **not run on a live server** in this environment.
-  Please try it on a test server before a public release, especially the anvil and sign prompts,
+  Please try it on a test server before a public release, especially the sign prompt,
   which depend on the client and the server version.
 - The sign prompt places a real sign three blocks above the player, and removes it afterwards. Other
-  nearby players may briefly see it. Use `reader.input: ANVIL` (the default) if that matters.
+  nearby players may briefly see it. If that matters, or if a sign cannot be placed, the plugin asks in chat.
+- The anvil rename box is supported as an option (`reader.input: ANVIL`), but Bukkit does not reliably
+  expose the typed text on every version, so the plugin falls back to chat when it comes back empty.
+  Reliable anvil input needs version-specific NMS code, such as the AnvilGUI library uses.
+- Servers keep the `config.yml` they were first started with. Set `reader.input: SIGN` in
+  `plugins/BiblePlugin/config.yml` and run `/bible reload`.
 - Written books have a size limit, so long passages are truncated with a notice after
   `temporary-book.max-pages` pages.
 - Only editions that are openly available are downloadable. Commercial editions need the import route.

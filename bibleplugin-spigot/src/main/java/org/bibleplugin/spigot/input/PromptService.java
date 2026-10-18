@@ -3,6 +3,7 @@ package org.bibleplugin.spigot.input;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -15,14 +16,15 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.SignChangeEvent;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryDragEvent;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.event.inventory.PrepareAnvilEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.inventory.view.AnvilView;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.view.AnvilView;
 import org.bukkit.inventory.InventoryHolder;
 import org.bibleplugin.spigot.PluginContext;
 import org.bibleplugin.spigot.config.Settings;
@@ -31,12 +33,15 @@ import org.bibleplugin.spigot.sound.UiSound;
 import org.bibleplugin.spigot.text.Style;
 
 /**
- * Asks players for a line of text. Two strategies share one interface: an anvil with a rename box
- * (default) and a sign editor. The configured {@code reader.input} picks which one opens; the
- * anvil is used as a fallback when a sign cannot be placed.
+ * Asks players for a line of text. The sign editor is the default: Bukkit delivers a sign's text
+ * through {@code SignChangeEvent}, which works on every supported version. The anvil rename box is
+ * optional, because Bukkit does not reliably expose what a player types into it (the AnvilGUI library
+ * needs version-specific NMS code for that). Chat is the fallback when a sign cannot be placed or the
+ * anvil returns nothing.
  *
  * <p>Strategy pattern: {@link #requestText} is the only entry point, and the caller never knows
- * which input device was used. Only the main thread touches the maps here.
+ * which input device was used. Only the main thread touches the anvil and sign maps; the chat map
+ * is concurrent because chat events arrive asynchronously.
  */
 public final class PromptService implements Listener {
 
@@ -45,10 +50,12 @@ public final class PromptService implements Listener {
     }
 
     private static final long SIGN_TIMEOUT_TICKS = 20L * 60;
+    private static final long CHAT_TIMEOUT_TICKS = 20L * 60;
 
     private final PluginContext services;
     private final Map<UUID, Prompt> anvilPrompts = new HashMap<>();
     private final Map<UUID, SignSession> signSessions = new HashMap<>();
+    private final Map<UUID, Prompt> chatPrompts = new ConcurrentHashMap<>();
 
     public PromptService(PluginContext services) {
         this.services = services;
@@ -61,7 +68,10 @@ public final class PromptService implements Listener {
     public void requestText(Player player, String title, String initial, Consumer<String> onSubmit, Runnable onCancel) {
         cancel(player);
         Prompt prompt = new Prompt(onSubmit, onCancel);
-        if (services.settings().inputMode() == Settings.InputMode.SIGN && openSign(player, prompt)) {
+        if (services.settings().inputMode() == Settings.InputMode.SIGN) {
+            if (!openSign(player, prompt)) {
+                askInChat(player, prompt);
+            }
             return;
         }
         openAnvil(player, title, initial, prompt);
@@ -70,6 +80,7 @@ public final class PromptService implements Listener {
     /** Silently drops any prompt the player has open. */
     public void cancel(Player player) {
         anvilPrompts.remove(player.getUniqueId());
+        chatPrompts.remove(player.getUniqueId());
         SignSession session = signSessions.remove(player.getUniqueId());
         if (session != null) {
             session.restore();
@@ -111,34 +122,83 @@ public final class PromptService implements Listener {
 
     @EventHandler
     public void onPrepareAnvil(PrepareAnvilEvent event) {
-        if (event.getInventory().getHolder() instanceof PromptHolder) {
+        if (event.getInventory().getHolder() instanceof PromptHolder holder) {
+            // This event always carries the AnvilView, and it fires on every rename keystroke,
+            // so the typed text is captured here. Reading it later from the click event is unreliable.
+            holder.typed = event.getView().getRenameText();
             event.setResult(Items.of(Material.NAME_TAG, Style.SUCCESS + "» Submit"));
         }
     }
 
     @EventHandler
     public void onAnvilClick(InventoryClickEvent event) {
-        if (!(event.getView().getTopInventory().getHolder() instanceof PromptHolder)) {
+        if (!(event.getView().getTopInventory().getHolder() instanceof PromptHolder holder)) {
             return;
         }
         event.setCancelled(true);
         if (event.getRawSlot() != 2 || !(event.getWhoClicked() instanceof Player player)) {
             return;
         }
-        String rename = event.getView() instanceof AnvilView view ? view.getRenameText() : null;
-        String text = rename == null ? "" : rename.strip();
-        if (text.isEmpty()) {
-            services.play(player, UiSound.ERROR);
-            player.sendMessage(services.messages().prefixed("prompt.empty"));
-            return;
-        }
         Prompt prompt = anvilPrompts.remove(player.getUniqueId());
         if (prompt == null) {
             return;
         }
+        String live = event.getView() instanceof AnvilView view ? view.getRenameText() : null;
+        String text = firstNonBlank(live, holder.typed).strip();
         player.closeInventory();
+        if (text.isEmpty()) {
+            services.plugin().getLogger().warning("Anvil search: the anvil returned no text (live view='"
+                    + live + "', while preparing='" + holder.typed + "'). Asking the player in chat instead.");
+            services.play(player, UiSound.ERROR);
+            askInChat(player, prompt);
+            return;
+        }
         services.play(player, UiSound.CLICK);
         prompt.onSubmit().accept(text);
+    }
+
+    private static String firstNonBlank(String first, String second) {
+        if (first != null && !first.isBlank()) {
+            return first;
+        }
+        return second == null ? "" : second;
+    }
+
+    /** Asks the player to type their answer in chat. Their next message is taken as the answer. */
+    private void askInChat(Player player, Prompt prompt) {
+        UUID id = player.getUniqueId();
+        chatPrompts.put(id, prompt);
+        player.sendMessage(services.messages().prefixed("prompt.chat-fallback"));
+        services.plugin().getServer().getScheduler().runTaskLater(services.plugin(), () -> {
+            if (chatPrompts.remove(id, prompt)) {
+                player.sendMessage(services.messages().prefixed("prompt.chat-timeout"));
+                prompt.onCancel().run();
+            }
+        }, CHAT_TIMEOUT_TICKS);
+    }
+
+    @EventHandler
+    public void onChat(AsyncPlayerChatEvent event) {
+        UUID id = event.getPlayer().getUniqueId();
+        Prompt prompt = chatPrompts.get(id);
+        if (prompt == null) {
+            return;
+        }
+        event.setCancelled(true);
+        String text = event.getMessage().strip();
+        Player player = event.getPlayer();
+        services.runSync(() -> {
+            if (!chatPrompts.remove(id, prompt)) {
+                return;
+            }
+            if (text.isEmpty() || text.equalsIgnoreCase("cancel")) {
+                player.sendMessage(services.messages().prefixed("prompt.chat-cancelled"));
+                prompt.onCancel().run();
+            } else {
+                services.play(player, UiSound.CLICK);
+                prompt.onSubmit().accept(text);
+            }
+        });
     }
 
     @EventHandler
@@ -184,6 +244,8 @@ public final class PromptService implements Listener {
     /** Holder that marks an inventory as a prompt, so its clicks are never mistaken for menu clicks. */
     private static final class PromptHolder implements InventoryHolder {
         private Inventory inventory;
+        /** The rename text as of the last anvil update, kept current by {@link #onPrepareAnvil}. */
+        private String typed;
 
         @Override
         public Inventory getInventory() {

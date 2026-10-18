@@ -27,16 +27,16 @@ public record Settings(
 
     /** How the plugin asks a player for text. */
     public enum InputMode {
-        /** An anvil with a rename box. Works everywhere, the default. */
+        /** An anvil with a rename box. Bukkit cannot reliably read the typed text, so this is optional. */
         ANVIL,
-        /** A sign editor. Briefly places a real sign above the player. */
+        /** A sign editor. Briefly places a real sign above the player. The default. */
         SIGN;
 
         public static InputMode parse(String value) {
             try {
                 return valueOf(value.trim().toUpperCase(Locale.ROOT));
             } catch (IllegalArgumentException | NullPointerException unknown) {
-                return ANVIL;
+                return SIGN;
             }
         }
     }
@@ -53,7 +53,7 @@ public record Settings(
                 .downloadAttempts(config.getInt("bibles.download.attempts", 3))
                 .resultsPerPage(config.getInt("search.results-per-page", 8))
                 .maxSearchResults(config.getInt("search.max-results", 200))
-                .inputMode(InputMode.parse(config.getString("reader.input", "ANVIL")))
+                .inputMode(InputMode.parse(config.getString("reader.input", "SIGN")))
                 .temporaryBookLifetime(Duration.ofMinutes(config.getLong("temporary-book.lifetime-minutes", 20)))
                 .bookCharsPerPage(config.getInt("temporary-book.chars-per-page", 240))
                 .bookMaxPages(config.getInt("temporary-book.max-pages", 100))
@@ -71,7 +71,7 @@ public record Settings(
         private int downloadAttempts = 3;
         private int resultsPerPage = 8;
         private int maxSearchResults = 200;
-        private InputMode inputMode = InputMode.ANVIL;
+        private InputMode inputMode = InputMode.SIGN;
         private Duration temporaryBookLifetime = Duration.ofMinutes(20);
         private int bookCharsPerPage = 240;
         private int bookMaxPages = 100;

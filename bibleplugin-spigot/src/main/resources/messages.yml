@@ -81,4 +81,6 @@ loginverse:
   usage: "Use &e/bible loginverse on&7 or &e/bible loginverse off&7."
 
 prompt:
-  empty: "&cType something in the box first."
+  chat-fallback: "&7Type your search in chat now. Type &ccancel&7 to stop."
+  chat-cancelled: "&7Search cancelled."
+  chat-timeout: "&7The input timed out."
